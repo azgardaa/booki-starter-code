@@ -60,15 +60,15 @@ a {
 /****** Header *******/
 header {
     display: flex;
-    justify-content: space-between;
-    width: 1440px;
+    flex-direction:row;
+    justify-content:space-between;
+    width: 100%;
     height: 79px
 }
-.Boxacceuil {
-    width: 161.09px;
-    height: 79px ;
-    padding: 30px 50px ;
-    margin-right: 10px;
+.boxlogo {
+    width: 61.09px ;
+    height: 19px;
+    padding: 5px 5px 5px 5px ;
     display: flex;
 }
 
@@ -77,7 +77,7 @@ header {
     height: 19px;
 }
 
-.lienheader {
+.boutonHA {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -88,24 +88,55 @@ header {
     gap: 68px
 }
 
-.stylax {
+.HetA {
     background-color:white;
     border: 0;
     position: relative;
 }
 
-.stylax:hover {
+.HetA:hover {
     color: #0065FC; 
 }
 
-.stylax:hover::before {
+.HetA:hover::before {
     content: '';
     position: absolute;
-    top: -7px;
+    top: -8px;
     left: 0;
     width: 100%;
     height: 2px;
     background-color: #0065FC;
+}
+
+/****** Barre de recherche ******/
+.recherche {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: baseline;
+}
+.pointR {
+    background-color: #F2F2F2;
+    padding: 9px 10px 9px 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+.fa-location-dot {
+    color: black;
+}
+.barreR {
+    border: 1px solid #F2F2F2;
+    padding: 10.4px 0px 9px 0px;
+    margin-left: -5px;
+    text-align: center;
+    font-weight: bold;
+}
+.boutonR {
+    padding: 11px 9px 10px 9px;
+    margin-left: -5px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    font-weight: bold;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -213,5 +244,8 @@ header {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .HetA:hover::before {
+        bottom: -10px;
+    }
+
 }

@@ -17,17 +17,24 @@
 <body>
     <div class="main-container">
         <header>
-            <div class="Boxacceuil">
-            <a href="index.html"><img class="Logoacceuil"  src="images/logo/Booki.png" alt="Logo Booki"></a> 
+            <div class="boxlogo">
+            <a class="Logoacceuil" href="index.html"><img class="Logoacceuil"  src="images/logo/Booki.png" alt="Logo Booki"></a> 
             </div>
 
-            <div class="lienheader">
-                <a href="#"><button class="stylax">Hébergements</button></a>
-                <a href="#"><button class="stylax">Activités</button></a>
+            <div class="boutonHA">
+                <a href="#"><button class="HetA">Hébergements</button></a>
+                <a href="#"><button class="HetA">Activités</button></a>
             </div>
 
         </header>
         <main>
+            <div class="recherche">
+            <form method="get" action="">
+                <label for="Rsearch" class="pointR"><i class="fa-solid fa-location-dot"></i></label> 
+                <input class="barreR" id="Rsearch" type="search" name="Recherche" value="Marseille, France">
+                <button class="boutonR">Rechercher</button>
+            </form>
+         </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
