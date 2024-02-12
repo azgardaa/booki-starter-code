@@ -57,6 +57,22 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
+
+
+/****** Para et titre *****/
+
+h1  {
+    font-size: 22px ;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+
 /****** Header *******/
 header {
     display: flex;
@@ -84,7 +100,7 @@ header {
     width: 344px;
     height: 35px;
     left: 1096px;
-    padding: 0px, 50px, 0px, 50px;
+    padding: 0px 50px 0px 50px;
     gap: 68px
 }
 
@@ -110,34 +126,103 @@ header {
 
 /****** Barre de recherche ******/
 .recherche {
-    margin-bottom: 10px;
+    margin: 35px 0px 35px 0px;
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    flex-direction: row;
+
+}
+.recherche form {
+    width: 100%;
+    max-width: 377px; 
+    height: 49px;
+    display: flex;
 }
 .pointR {
     background-color: #F2F2F2;
-    padding: 9px 10px 9px 10px;
     border-radius: 10px 0px 0px 10px;
+    height: 49px;
+    width: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .fa-location-dot {
     color: black;
+    font-size: 14px;
+    
 }
 .barreR {
     border: 1px solid #F2F2F2;
-    padding: 10.4px 0px 9px 0px;
     margin-left: -5px;
     text-align: center;
     font-weight: bold;
+    font-size: 18px;
+    height: 49px;
 }
 .boutonR {
-    padding: 11px 9px 10px 9px;
     margin-left: -5px;
     border-radius: 0px 10px 10px 0px;
     background-color: #0065FC;
     border: none;
     color: white;
     font-weight: bold;
+    height: 49px;
+    width: 132px;
 }
+
+/****** Filtres *******/
+.Filtre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    width: 758px;
+    height: 50px;
+    margin: 35px 0px 35px 0px;
+}
+
+.boutonF {
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
+    background-color: white;
+    border: 2px solid #F2F2F2;
+    font-weight: 700;
+}
+.boutonF:hover {
+    background-color: #DEEBFF ;
+}
+
+.boutonF i {
+    margin-right: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-right: 10px;
+    align-items: center;
+    display: flex;
+}
+
+/****** Barre info *****/
+.ligne-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 24px;
+    margin-bottom: 35px;
+}
+
+.fa-info {
+    padding: 10px;
+    border: solid #DEEBFF 1px;
+    border-radius: 45px;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
