@@ -117,7 +117,6 @@ header {
 .fa-location-dot {
     color: black;
     font-size: 14px;
-    
 }
 .barreR {
     border: 1px solid #F2F2F2;
@@ -437,13 +436,13 @@ footer {
     .recherche form {
         border: 1px solid #F2F2F2;
         border-radius: 15px;
-        max-width: 333px;
+        max-width: 100%;
     }
     .barreR {
         text-align: left;
         padding-left: 20px;
         padding-right: 0px;
-        width: 236px;
+        width: 100%;
         border: 0px;
     }
     .loop {
